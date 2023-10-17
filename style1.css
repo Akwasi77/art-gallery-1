@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;900&family=Outfit&display=swap');
+
+* {padding: 0px;
+margin: 0px;
+box-sizing: border-box;}
+:root {
+    --white: hsla(0,0%,100%,100%);
+   --almost-black: hsla(0,0%,8%,100%);
+    --gold: hsla(24,56%,63%,100%);
+    --dark-grey: hsla(0,0%,27%,100%);}
+
+    h1 , h2, h3, h4 {
+        font-weight: 900;
+        font-family: 'Big Shoulders Display', sans-serif;}
+
+        p { font-family: 'Outfit', sans-serif;
+        font-weight: 300;}
+
+    @media screen and (min-width:1440px){
+.tablet-image1,.tablet-image2, .tablet-image3, .tablet-image4 {display: none;}
+.mobile-image1 , .mobile-image2, .mobile-image3, .mobile-image4 {display: none;}
+
+a :active {
+    cursor: pointer;
+}
+.button-container :active {
+    color: var(--gold);
+}
+
+.button-image :active {
+color: var(--almost-black);
+}
+
+
+
+        body{
+            width: 100%;
+            height: 2554px;}
+
+            .full-wrapper {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 800px 1150px 244px; 
+           row-gap:180px;}
+
+            .first-container {
+                width: 90%;
+                height:800px;
+                display: grid;
+                grid-template-columns: 450px 540px 350px;
+                position: relative; }
+            
+                .about {
+                    width: 450px;
+                    height: 799px;
+                    background-color: black;
+                    color: white;
+                }
+            
+                .about h1 {
+                    width: 514px;
+                    height:176px;
+                    font-size: 96px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 189px;
+                    left:165px ; }
+            
+                    span {color: black;}
+            
+                    .about p {
+                        width: 350px;
+                        height: 160px;
+                        font-size: 22px;
+                        position: absolute;
+                        top: 190px;
+                        left: 925px;
+                        color: var(--dark-grey);}
+            
+                       .button-container {
+                        width: 260px;
+                        height: 72px;
+                        display: flex;
+                       position: absolute;
+                       top:425px;
+                       left: 925px;}
+            
+            
+            
+                        .location{
+                            width: 204px;
+                            height: 72px;
+                            background-color: black;}
+            
+                        button a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-weight: 900;}
+            
+                            .button-image{
+                                width: 56px;
+                                height: 72px;
+                                background-color: var(--gold);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;}
+            
+                    .desktop-image1 img {
+                        width: 100%;
+                        height: 100%; }
+
+                       /* End of first-container */
+
+
+                       /* Beginning of the second-container */
+
+                       .second-container {
+                        justify-self: center;
+                        width: 1110px;
+                        height: 1150px;
+                        display: grid;
+                        grid-template-columns: 100%;
+                        grid-template-rows: 400px 720px;
+                        gap: 30px;}
+
+                        .first-section {
+                            width: 100%;
+                            height: 400px;
+                            display: grid;
+                            grid-template-columns: 350px 635px;
+                        gap: 125px;}
+
+                            .first-about{
+                                width: 350px;
+                                height: 280px; 
+                            display: grid;
+                        gap: 32px;}
+
+                                .first-about h2{
+                                    width: 350px;
+                                    height: 120px;
+                                    text-transform: uppercase;
+                                font-size: 60px;
+                                font-weight: 900;}
+        
+                                .first-about p {
+                                    width: 350px;
+                                    height: 128px;
+                                    font-size: 22px;
+                                    color: var(--dark-grey);}
+
+                                    .desktop-image2 {
+                                        width: 635px;
+                                        height: 400px; }
+
+                                    
+                                    .desktop-image2 img {
+                                        width: 100%;
+                                        height: 100%;}
+
+                                        /* End of first-section */
+
+                                        .second-section{
+                                            width: 1110px;
+                                            height: 720px;
+                                            display: grid;
+                                            grid-template-columns: 635px 445px;
+                                            grid-template-rows: 720px;
+                                            gap: 30px; }
+
+                                            .desktop-image3 {
+                                                width: 635px;
+                                                height: 720px;}
+
+                                                .desktop-image3 img {
+                                                    width: 100%;
+                                                    height: 100%; }
+
+                                                   .full-box {
+                                                    width: 445px;
+                                                    height: 720px;
+                                                    display: grid;
+                                                    grid-template-columns: 445px;
+                                                    grid-template-rows: 313px 377px;
+                                                }
+                                                   
+                                                    
+
+                                                   .desktop-image4 {
+                                                    width: 445px;
+                                                    height: 313px;
+                                                margin-bottom: 30px;}
+
+                                                   .desktop-image4 img {
+                                                    width: 445px;
+                                                    height: 313px;}
+
+                                                    .advertisements{
+                                                        width: 445px;
+                                                        height: 377px;
+                                                        background-color: var(--almost-black);
+                                                        color: white;
+                                                    display: grid;
+                                                gap: 32px;
+                                                padding-top: 65px;
+                                            padding-left: 48px;}
+
+                                                        .advertisements h3{
+                                                            width: 350px;
+                                                            height: 120px;
+                                                            font-size: 60px;
+                                                            font-weight: 900;}
+                                                            .advertisements p {
+                                                                width: 350px;
+                                                                height: 96px;
+                                                                font-size: 22px;
+                                                            }
+
+                                                    /* End of Second-container */
+
+                                                    /* Beginning of footer */
+
+                                                    footer {
+                                                        width: 100%;
+                                                        height: 244px;
+                                                        background-color: var(--almost-black);
+                                                        color: white; 
+                                                    display: grid;
+                                                justify-content: center;
+                                            align-content: center;}
+
+                                            .footer-content {
+                                                width: 1110px;
+                                                height: 84px;
+                                                display: grid;
+                                                grid-template-columns: 730px 100px;
+                                                grid-template-rows: 84px;
+                                            gap: 280px; }
+
+
+                                                .footer-about {
+                                                    width: 730px;
+                                                    height: 84px;
+                                                    display: flex;
+                                                gap: 50px;}
+
+                                                    .footer-about h3 {
+                                                        width: 160px;
+                                                        height: 54px;
+                                                        font-size: 36px; }
+
+                                                        .footer-about p {
+                                                            width: 430px;
+                                                            height: 74px;
+                                                            font-size: 18px; }
+
+                                                            .social-media {
+                                                                width: 100px;
+                                                                height: 20px;
+                                                                display: flex;
+                                                                gap: 10px;
+                                                            }
+
+    }
+
+    @media screen and (min-width:750px) and (max-width:1024px){
+
+.desktop-image1, .desktop-image2, .desktop-image3, .desktop-image4 {display: none;}
+.mobile-image1 , .mobile-image2 , .mobile-image3 , .mobile-image4 {display: none;}
+    body{width: 100%;
+    height: 2287px;}
+
+    .full-wrapper {
+        width: 100%;
+        height: 2287px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 700px 1131px 216px;
+        gap: 120px;}
+
+        .first-container {position: relative;
+            width: 90%;
+            height:700px ;
+            display: grid;
+            grid-template-columns:437px 339px;
+            grid-template-rows: 700px;
+        align-items: center;}
+
+            .about {position: absolute;
+                z-index: 100;
+                left: 389px;
+                top: 145px;
+                width: 339px;
+                height: 410px;
+            display: grid;
+        gap: 48px;}
+
+                .about h1 {
+                    width: 339px;
+                    height: 130px;
+                    font-size: 70px;}
+
+                    .about p {
+                        width: 339px;
+                        height: 112px;
+                        font-size: 18px;
+                        color: var(--dark-grey); }
+
+                        .button-container { width: 260px;
+                            height: 72px;
+                        display: flex;}
+
+                            .location{
+                                width: 204px;
+                                height: 72px;
+                                background-color: black;}
+
+                                 button a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 20px;
+                            font-weight: 900;}
+
+                            .button-image{
+                                width: 56px;
+                                height: 72px;
+                                background-color: var(--gold);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;}
+
+                                .tablet-image1{position: absolute;
+                                    z-index: 82px;
+                                    left: 0;
+                                    width: 437px;
+                                    height: 700px; }
+                
+                                .tablet-image1 img{
+                                    width: 437px;
+                                    height: 700px;
+                                }
+
+                                /* End of first-container */
+
+                                .second-container {
+                                    justify-self: center;
+                                    width: 90%;
+                                    height: 1131px;
+                                    display: grid;
+                                    grid-template-columns: 100%;
+                                    grid-template-rows: 400px 720px;
+                                    gap: 11px;}
+
+                                    .first-section {
+                                        width: 100%;
+                                        height: 400px;
+                                        display: grid;
+                                        grid-template-columns: 223px 398px;
+                                        grid-template-rows: 400px;
+                                        gap: 68px;}
+
+                                        .first-about {
+                                            width: 223px;
+                                            height: 299px;
+                                        display: grid;
+                                    gap: 40px ;}
+
+                                            .first-about h2 {text-transform: uppercase;
+                                                width:223px ;
+                                                height:135px ;
+                                                font-size:50px ; }
+
+                                                .first-about p {
+                                                    width:223px ;
+                                                    height: 140px;
+                                                    font-size: 18px ;
+                                                    color: var(--dark-grey) ; }
+
+                                                    .tablet-image2 {
+                                                        width: 398px;
+                                                        height: 400px;}
+
+                                                        .tablet-image2 img {
+                                                            width: 398px;
+                                                            height: 400px;}
+
+                                                            .second-section {
+                                                                width: 100%;
+                                                                height: 720px;
+                                                                display: grid;
+                                                                grid-template-columns:398px 280px;
+                                                                gap: 11px;}
+
+                                                                .tablet-image3 {
+                                                                    width: 398px;
+                                                                    height: 720px;
+                                                                }
+                                                                .tablet-image3 img {
+                                                                    width:398px ;
+                                                                    height: 720px;}
+
+                                                                    .part-two {
+                                                                        width:280px ;
+                                                                        height:720px ;
+                                                                        display: grid;
+                                                                        grid-template-columns: 280px;
+                                                                        grid-template-rows:313px 396px;
+                                                                        }
+
+                                                                        .tablet-image4 {
+                                                                            width:280px ;
+                                                                            height: 313px;
+                                                                            margin-bottom: 11px;
+                                                                        }
+                                                                        .tablet-image4 img {
+                                                                            width: 280px;
+                                                                            height: 313px;
+                                                                        }
+
+                                                                        .advertisements {
+                                                                            width:280px ;
+                                                                            height: 396px;
+                                                                            background-color: black;
+                                                                            color:white ;
+                                                                            display: grid;
+                                                                            place-items: center center;
+                                                                            gap: 30px;
+                                                                        }
+
+                                                                        .advertisements h3 {
+                                                                            width: 223px;
+                                                                            height: 90px;
+                                                                            font-size:50px ;
+                                                                            text-transform: uppercase;
+                                                                        }
+
+                                                                        .advertisements p {
+                                                                            width: 223px;
+                                                                            height: 112px;
+                                                                            font-size: 18px;
+                                                                        }
+                
+                
+                                                                        footer {
+                                                                            width: 100%;
+                                                                            height: 216px;
+                                                                            background-color: var(--almost-black);
+                                                                            color: white; 
+                                                                        display: grid;
+                                                                    justify-content: center;
+                                                                align-content: center;}
+                    
+                                                                .footer-content {
+                                                                    width: 90%;
+                                                                    height: 104px;
+                                                                    display: grid;
+                                                                    grid-template-columns: 390px 100px;
+                                                                    grid-template-rows: 104px;
+                                                                gap: 133px; }
+                    
+                    
+                                                                    .footer-about {
+                                                                        width: 390px;
+                                                                        height: 104px;
+                                                                        display: flex;
+                                                                    gap: 50px;}
+                    
+                                                                        .footer-about h3 {
+                                                                            width: 110px;
+                                                                            height: 40px;
+                                                                            font-size: 32px; }
+                    
+                                                                            .footer-about p {
+                                                                                width: 281px;
+                                                                                height: 104px;
+                                                                                font-size: 16px; }
+                    
+                                                                                .social-media {
+                                                                                    width: 100px;
+                                                                                    height: 20px;
+                                                                                    display: flex;
+                                                                                    gap: 10px;
+                                                                                }
+
+
+    }
+
+    @media screen and (max-width:749px) {
+        .tablet-image1, .tablet-image2 ,.tablet-image3 ,.tablet-image4 {display: none;}
+        .desktop-image1 , .desktop-image2, .desktop-image3 , .desktop-image4 {display: none;}
+
+        body {
+            width: 100%;
+            height: 2811px; }
+
+            .full-wrapper {
+                width: 100%;
+                height: 2811px;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 630px 1605px 336px;
+                align-items: center;
+            gap: 120px;
+             }
+
+               .first-container{
+                width: 100%;
+                height: 630px;
+                display: flex;
+                flex-direction: column-reverse;
+            gap: 32px;
+        margin-bottom: 120px;}
+
+                .mobile-image1 {
+                    width: 100%;
+                    height: 240px;
+                }
+                .mobile-image1 img {
+                    width: 100%;
+                    height: 240px;
+                }
+
+                .about {
+                    width: 100%;
+                    height: 390px;
+                display: grid;
+            gap: 50px;}
+
+                    .about h1 {text-transform: uppercase;
+                        width: 90%;
+                        height: 110px;
+                        font-size: 60px; }
+
+                        .about p {
+                            width: 100%;
+                            height: 112px;
+                            font-size: 18px;
+                            color: var(--dark-grey); }
+
+                            .button-container { width: 260px;
+                                height: 72px;
+                            display: flex;}
+    
+                                .location{
+                                    width: 204px;
+                                    height: 72px;
+                                    background-color: black;}
+    
+                                     button a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 20px;
+                                font-weight: 900;}
+    
+                                .button-image{
+                                    width: 56px;
+                                    height: 72px;
+                                    background-color: var(--gold);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;}
+
+                                    /* End of Section */
+
+                                    .second-container {
+                                        width: 95%;
+                                        height: 1605px;
+                                        display: grid;
+                                        grid-template-columns: 95%;
+                                        grid-template-rows: 543px 919px;
+                                        justify-content: center;
+                                        gap: 16px;}
+
+                                        .first-section {
+                                            width: 100%;
+                                            height: 543px;
+                                            display: flex;
+                                            flex-direction: column-reverse;
+                                            gap: 16px;}
+
+                                            .mobile-image2 {
+                                                width: 100%;
+                                                height: 320px;
+                                            }
+
+                                            .mobile-image2 img {
+                                                width: 100%;
+                                                height: 320px;
+                                            }
+
+                                            .first-about {
+                                                width: 100%;
+                                                height: 223px;
+                                                display: grid;
+                                                gap: 21px;
+                                            }
+
+                                            .first-about h2 {text-transform: uppercase;
+                                                width: 95%;
+                                                height: 90px;
+                                                font-size: 50px;
+                                            }
+
+                                            .first-about p {
+                                                width: 95%;
+                                                height: 112px;
+                                                font-size: 18px;
+                                                color: var(--dark-grey); }
+
+                                                /* End of first section */
+
+                                                .second-section {
+                                                    height: 919px;
+                                                   width: 95%;
+                                                   display:flex;
+                                                   flex-direction: column;
+                                                   gap: 16px; }
+
+                                                   .mobile-image3 {
+                                                    width: 100%;
+                                                    height: 480px;
+                                                   }
+
+                                                   .mobile-image3 img {
+                                                    width: 100%;
+                                                    height: 480px;
+                                                   }
+
+                                                   .part-two {
+                                                    width: 100%;
+                                                    height:493px ;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 16px;
+                                                   }
+
+                                                   .mobile-image4 {
+                                                    width: 100%;
+                                                    height: 200px;
+                                                    margin-bottom: 16px;
+                                                   }
+                                                   .mobile-image4 img {
+                                                    width: 100%;
+                                                    height: 200px;
+                                                   }
+
+                                                   .advertisements{
+                                                    width: 100%;
+                                                    height: 293px;
+                                                    background-color: var(--almost-black);
+                                                    color: white;
+                                                    display: grid;
+                                                    place-items:  center center;
+                                                    gap: 24px;
+                                                   }
+                                                   .advertisements h3 {text-transform: uppercase;
+                                                    width: 90%;
+                                                    height: 90px;
+                                                    font-size: 50px;}
+
+                                                    .advertisements p {
+                                                        width: 91%;
+                                                        height: 84px;
+                                                        font-size: 18px;
+                                                    }
+
+                                                    /* End of Second Container */
+
+                                                    footer {
+                                                        width: 100%;
+                                                        height: 336px;
+                                                        background-color: var(--almost-black);
+                                                        color: white;
+                                                        display: grid;
+                                                        place-items: center center; }
+
+                                                        .footer-content {
+                                                            width: 83%;
+                                                            height: 240px;
+                                                            display: grid;
+                                                            grid-template-columns: 100%;
+                                                            grid-template-rows: 214px 20px;}
+                                                            
+                                                            .footer-about {
+                                                                width: 100%;
+                                                                height:214px;
+                                                                display: grid;
+                                                                gap: 50px;
+                                                            }
+
+                                                            .footer-about h3 {
+                                                                width:40%;
+                                                                height: 50px;
+                                                                font-size: 30px;
+                                                                text-transform: uppercase;
+                                                            }
+
+                                                            .footer-about p {
+                                                                width: 100%;
+                                                                height: 104px;
+                                                                font-size: 16px; }
+
+                                                                .social-media {
+                                                                    width: 100px;
+                                                                    height: 20px;
+                                                                    display: flex;
+                                                                    gap: 10px;}
+   
+
+
+
+
+
+
+
+
+    }
+
+
